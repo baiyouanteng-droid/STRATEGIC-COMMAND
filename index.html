@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>STRATEGIC COMMAND</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+             rel="stylesheet"
+             href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     />
+</head>
+
+<body>
+<div id="alert-banner">
+
+    MAXIMUM ALERT STATUS
+
+</div>
+
+<div id="boot-screen">
+
+<h1>STRATEGIC COMMAND</h1>
+
+<p>SECURE LINK ESTABLISHED</p>
+
+<p>WELCOME, COMMANDER.</p>
+
+</div>
+
+<div id="main-screen">
+
+<div class="status-bar">
+    <button id="defcon-btn">
+        DEFCON 5
+    </button>
+</div>
+<div id="defcon-panel">
+
+<h3>DEFCON STATUS</h3>
+
+<div id="defcon-level">
+
+5
+
+</div>
+
+<button id="defcon-down">
+
+LOWER DEFCON
+
+</button>
+
+<button id="defcon-up">
+
+RAISE DEFCON
+
+</button>
+
+</div>
+<div id="confirm-modal">
+
+    <div id="confirm-box">
+
+        <h2>MAXIMUM ALERT</h2>
+
+        <p id="confirm-text">
+        </p>
+
+        <button id="confirm-yes">
+            YES
+        </button>
+
+        <button id="confirm-no">
+            NO
+        </button>
+
+    </div>
+
+</div>
+
+
+<div id="target-panel">
+
+<h3>TARGET</h3>
+
+<p>STATUS :
+<span id="target-status">
+NONE
+</span></p>
+
+<p>LAT :
+<span id="target-lat">
+--
+</span></p>
+
+<p>LON :
+<span id="target-lon">
+--
+</span></p>
+
+</div>
+
+<div id="map">
+
+    MAP AREA
+
+</div>
+
+<select id="launch-site">
+
+    <option value="jp">
+        JAPAN
+    </option>
+
+    <option value="uk">
+        UNITED KINGDOM
+    </option>
+
+    <option value="ru">
+        RUSSIA
+    </option>
+
+    <option value="cn">
+        CHINA
+    </option>
+
+    <option value="fr">
+        FRANCE
+    </option>
+
+    <option value="sub">
+        SUBMARINE
+    </option>
+
+</select>
+<div id="launch-panel">
+
+    <h3>MISSILE CONTROL</h3>
+
+    <select id="missile-select">
+    </select>
+
+    <button id="launch-btn">
+        AUTHORIZE LAUNCH
+    </button>
+<div id="launch-status">
+
+READY
+
+</div>
+
+</div>
+
+
+<div id="comms-panel">
+
+    <h3>COMMS TERMINAL</h3>
+
+    <div id="comms-output"></div>
+
+    <input
+        type="text"
+        id="comms-input"
+        placeholder="ENTER COMMAND">
+
+    <button id="comms-send">
+        SEND
+    </button>
+
+</div>
+<div id="confirm-modal">
+
+    <div id="confirm-box">
+
+        <h2>MAXIMUM ALERT</h2>
+
+        <p id="confirm-text"></p>
+
+        <button id="confirm-yes">
+            YES
+        </button>
+
+        <button id="confirm-no">
+            NO
+        </button>
+
+    </div>
+
+</div>
+
+
+<div class="menu">
+
+<button>LAUNCH</button>
+
+<button>LOGS</button>
+
+<button>COMMS</button>
+
+<div id="logs-panel">
+
+<h3>MISSION LOGS</h3>
+
+<div id="logs-container">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/missiles.js"></script>
+<script src="js/comms.js"></script>
+<script src="js/logs.js"></script>
+<script src="js/app.js"></script>
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+
+</script>
+</body>
+</html>
